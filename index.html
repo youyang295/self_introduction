@@ -356,33 +356,6 @@ html[data-theme="light"] .moon { display: block; }
 /* 引言卡相关的样式已随卡片一起删除，不再保留死代码。
    如果以后想加回一张引言卡，样式需要重新写。 */
 
-/* ========== 我能贡献什么 ========== */
-.contribute-card { padding: 34px 38px 30px; }
-.contribute-list { list-style: none; display: grid; gap: 13px; margin-bottom: 24px; }
-.contribute-list li {
-  display: flex; align-items: flex-start; gap: 12px;
-  font-size: 15.5px; color: var(--text-dim); line-height: 1.65;
-}
-/* 勾选框：用 CSS 画的空心方块 + 对勾，不用图片也不依赖图标库 */
-.contribute-list li::before {
-  content: "✓";
-  flex: none; margin-top: 2px;
-  width: 20px; height: 20px; border-radius: 6px;
-  display: grid; place-items: center;
-  font-size: 12px; font-weight: 800; color: var(--brand-2);
-  background: rgba(34, 211, 238, .12);
-  border: 1px solid rgba(34, 211, 238, .40);
-}
-.contribute-list li b { color: var(--text); font-weight: 700; }
-.contribute-foot {
-  padding-top: 20px; border-top: 1px solid var(--border);
-  font-size: 15.5px; color: var(--text-dim); text-align: center;
-}
-@media (max-width: 600px) {
-  .contribute-card { padding: 26px 20px 22px; }
-  .contribute-list li { font-size: 15px; }
-}
-
 /* ========== 技能 ========== */
 .skill-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
 .skill-card { padding: 28px; }
@@ -625,7 +598,6 @@ footer .heart { color: var(--brand-3); }
 
     <nav class="nav-links" id="navLinks">
       <a href="#about">关于我</a>
-      <a href="#contribute">我能贡献</a>
       <a href="#skills">技能</a>
       <a href="#work">作品</a>
       <a href="#journey">经历</a>
@@ -747,33 +719,6 @@ footer .heart { color: var(--brand-3); }
   </div>
 </section>
 
-<!-- ================= 我能贡献什么 ================= -->
-<section id="contribute">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="eyebrow">Contribute</span>
-      <h2 class="title">我能<span class="grad">贡献</span>什么</h2>
-      <p class="lede">
-        面向团委社团招新：下面这些是我进社团之后能立刻上手做的事。
-        不是许愿，是已经做过或能马上做出来的。
-      </p>
-    </div>
-
-    <div class="glass contribute-card reveal">
-      <ul class="contribute-list">
-        <li>活动报名 / 签到数据整理与统计</li>
-        <li>问卷设计与结果可视化</li>
-        <li>日常文件批量处理脚本</li>
-        <li>简单网页 / 小工具开发（如果社团需要）</li>
-        <li>Python 学习资料整理与内部分享</li>
-        <li><b>其他：你们需要什么，我可以学</b></li>
-      </ul>
-      <p class="contribute-foot">
-        技术会的不算多，但学习能力和执行力在线。
-      </p>
-    </div>
-  </div>
-</section>
 <!-- ================= 技能 ================= -->
 <section id="skills">
   <div class="wrap">
